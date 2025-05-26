@@ -11,7 +11,7 @@ stemmer = SnowballStemmer("english")
 lemmatizer = WordNetLemmatizer()
 
 
-def load_limited_leaky_words(path="leaky_words.json", top_fake=10000, top_real=10000) -> set:
+def load_limited_leaky_words(path="../registry/vocabularies/leaky_words.json", top_fake=10000, top_real=10000) -> set:
     """
     Loads a limited set of leaky words (tokens unique to fake or real news) from a JSON file.
 
